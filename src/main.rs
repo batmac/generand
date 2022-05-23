@@ -1,12 +1,8 @@
-
 use generand::{consts::*, generate::*};
 
 use clap::Parser;
-
-
 #[derive(Parser, Debug)]
 #[clap(author, version, about, long_about = None)]
-
 struct Cli {
     #[clap(long, short, default_value="12")]
     size: usize,
@@ -19,17 +15,11 @@ struct Cli {
     #[clap(long, short, group="dict")]
     numeric: bool,
     #[clap(group="dict")]
-    dictionary: Option<String>,
-    
+    dictionary: Option<String>, 
 }
 
 fn main() {
-    //println!("Hello, world!");
-
     let cli = Cli::parse();
-
-    //let args: Vec<String> = env::args().collect();
-    //let n : usize = args[1].parse().unwrap();
 
     let s= if let Some(x)=cli.dictionary {
         x
