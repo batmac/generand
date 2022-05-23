@@ -1,7 +1,7 @@
 use generand::{consts::*, generate::*};
 
 use clap::Parser;
-#[derive(Parser, Debug)]
+#[derive(Parser)]
 #[clap(author, version, about, long_about = None)]
 struct Cli {
     #[clap(long, short, default_value="12")]
