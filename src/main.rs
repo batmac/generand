@@ -1,14 +1,50 @@
-use std::env;
 
 use generand::{consts::*, generate::*};
+
+use clap::Parser;
+
+
+#[derive(Parser, Debug)]
+#[clap(author, version, about, long_about = None)]
+
+struct Cli {
+    #[clap(long, short, default_value="12")]
+    size: usize,
+    #[clap(long, short, group="dict")]
+    full: bool,
+    #[clap(long, short, group="dict")]
+    cats: bool,
+    #[clap(long, short, group="dict")]
+    hex: bool,
+    #[clap(long, short, group="dict")]
+    numeric: bool,
+    #[clap(group="dict")]
+    dictionary: Option<String>,
+    
+}
 
 fn main() {
     //println!("Hello, world!");
 
-    let args: Vec<String> = env::args().collect();
-    let n : usize = args[1].parse().unwrap();
+    let cli = Cli::parse();
 
-    let s = generate(CATS, n);
+    //let args: Vec<String> = env::args().collect();
+    //let n : usize = args[1].parse().unwrap();
 
-    println!("{s}");
+    let s= if let Some(x)=cli.dictionary {
+        x
+    } else if cli.full {
+        SEVENBITS.to_string()
+    } else if cli.cats {
+        CATS.to_string()
+    } else if cli.hex {
+        LOW_HEX.to_string()
+    } else if cli.numeric {
+        NUMERIC.to_string()
+    } else {
+        ALPHANUMERIC.to_string()
+    };
+
+    let generated = generate(&s, cli.size);
+    println!("{}", &generated);
 }
