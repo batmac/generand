@@ -48,7 +48,7 @@ fn main() {
     };
 
     let max_per_line = cmp::max(1, term_width / (cli.size + 1));
-    eprintln!("max per line {max_per_line}");
+    // eprintln!("max per line {max_per_line}");
 
     let mut to_display = cli.number;
     while to_display > 0 {
