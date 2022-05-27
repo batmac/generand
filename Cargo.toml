@@ -2,19 +2,19 @@
 name = "generand"
 version = "1.0.0"
 edition = "2021"
-authors = [ "Baptiste Canton <bat@sbz.fr>" ]
+authors = ["Baptiste Canton <bat@sbz.fr>"]
 license = "MIT OR Apache-2.0"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
 rand = "0.8.5"
-clap = { version = "3.1.18", features = ["derive"], optional = true}
-terminal_size = "0.1.17"
+clap = { version = "3.1.18", features = ["derive"], optional = true }
+terminal_size = { version = "0.1.17", optional = true }
 
 [features]
 default = []
-bin = ["clap"]
+bin = ["clap", "terminal_size"]
 
 [[bin]]
 name = "generand"
@@ -26,5 +26,3 @@ criterion = "0.3.5"
 [[bench]]
 name = "benchmark"
 harness = false
-
-
