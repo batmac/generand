@@ -2,7 +2,8 @@
 
 crate to generate random sequences from your string/vec/iterator symbols.
 
-`--features=bin` to compile the cli tool `generand`:
+
+- `cargo install generand --features=bin` to install the cli tool `generand`:
 
 ```
 USAGE:
@@ -29,3 +30,5 @@ LE8Nd1gemH5g Pe17VgBKe74U 4bbNdQ16mWIp hxNMwlqoHD8W 3Wd2EEBKdhxw aVuXwSvUP4im
 Yhmx6KP2bdyI iincIf6FUdqp GrA5l5VlJJKT ldZBH2AlhDsf nTTYWvlXW5Ss e3FHFVNQ5PrO 
 Wo97SaSIewBG O6OCdQVblgsH h1ypG5vMv65a 
 ```
+
+( or add `generand` in dependencies in your Cargo.toml to use the crate.)
