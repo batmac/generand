@@ -1,4 +1,7 @@
 # generand
+[![Rust](https://github.com/batmac/generand/actions/workflows/rust.yml/badge.svg)](https://github.com/batmac/generand/actions/workflows/rust.yml)
+![Crates.io](https://img.shields.io/crates/v/generand)
+![GitHub](https://img.shields.io/github/license/batmac/generand)
 
 crate to generate random sequences from your string/vec/iterator symbols.
 
