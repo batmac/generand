@@ -2,6 +2,7 @@
 [![Rust](https://github.com/batmac/generand/actions/workflows/rust.yml/badge.svg)](https://github.com/batmac/generand/actions/workflows/rust.yml)
 ![Crates.io](https://img.shields.io/crates/v/generand)
 ![GitHub](https://img.shields.io/github/license/batmac/generand)
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fbatmac%2Fgenerand.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fbatmac%2Fgenerand?ref=badge_shield)
 
 crate to generate random sequences from your string/vec/iterator symbols.
 
@@ -35,3 +36,7 @@ Wo97SaSIewBG O6OCdQVblgsH h1ypG5vMv65a
 ```
 
 ( or add `generand` in dependencies in your Cargo.toml to use the crate.)
+
+
+## License
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fbatmac%2Fgenerand.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fbatmac%2Fgenerand?ref=badge_large)
