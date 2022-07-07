@@ -25,7 +25,7 @@ name = "generand"
 required-features = ["bin"]
 
 [dev-dependencies]
-criterion = "0.3.5"
+criterion = "0.3.6"
 
 [[bench]]
 name = "benchmark"
