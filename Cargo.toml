@@ -14,7 +14,7 @@ repository = "https://github.com/batmac/generand"
 [dependencies]
 rand = "0.8.5"
 clap = { version = "3.2.25", features = ["derive"], optional = true }
-terminal_size = { version = "0.2.6", optional = true }
+terminal_size = { version = "0.3.0", optional = true }
 
 [features]
 default = []
